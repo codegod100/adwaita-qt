@@ -2,3 +2,7 @@
 build
 CMakeLists.txt.user*
 
+artifacts/
+build-qt5/
+build-qt6/
+*.skill
