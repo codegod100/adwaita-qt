@@ -166,7 +166,7 @@ static ColorsPrivate::AdwaitaColor colorNameToEnum(const QString &name)
     QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("AdwaitaColor"));
     ColorsPrivate::AdwaitaColor value = static_cast<ColorsPrivate::AdwaitaColor>(metaEnum.keyToValue(name.toLatin1()));
 
-    return (value <= ColorsPrivate::invalid_color || value > ColorsPrivate::alt_focus_border_color) ? ColorsPrivate::invalid_color : value;
+    return (value <= ColorsPrivate::invalid_color || value > ColorsPrivate::mocha_crust) ? ColorsPrivate::invalid_color : value;
 }
 
 static QColor colorFromText(const QString &name)
